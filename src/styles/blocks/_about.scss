@@ -1,0 +1,60 @@
+.about {
+	padding: 120px 0;
+
+	@include tablet {
+		padding: 100px 0;
+	}
+
+	@include mobail {
+		padding: 80px 0;
+	}
+
+	@include mobail-s {
+		padding: 60px 0;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+
+		@include mobail {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		flex-basis: 750px;
+
+		@include tablet {
+			flex-basis: 336px;
+		}
+	}
+
+	&__title {
+		font-size: 52px;
+		font-weight: 600;
+		margin-bottom: 32px;
+
+		@include tablet {
+			font-size: 40px;
+			margin-bottom: 24px;
+		}
+	}
+
+	/* .about__description */
+
+	&__description {
+		font-size: 20px;
+	}
+
+	/* .about__picture */
+
+	&__picture {
+		flex-basis: 530px;
+
+		@include tablet {
+			flex-basis: 436px;
+		}
+	}
+}

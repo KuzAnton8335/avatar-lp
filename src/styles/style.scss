@@ -1,0 +1,13 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+//default
+@import "base/fonts";
+@import "base/default";
+@import "base/vars";
+@import "base/media";
+
+//blocks
+@import "blocks/header", "blocks/hero", "blocks/about","blocks/trailers";

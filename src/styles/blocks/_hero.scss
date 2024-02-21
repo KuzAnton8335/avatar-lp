@@ -1,0 +1,69 @@
+// дз
+.hero {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+
+	&__content {
+		position: absolute;
+		top: 404px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include tablet {
+			top: 265px;
+		}
+
+		@include mobail {
+			top: 143px;
+		}
+	}
+
+	&__picture {
+		max-width: 795px;
+		padding-top: 2px;
+
+		@include tablet {
+			max-width: 639px;
+		}
+
+		@include mobail-s {
+			max-width: 288px;
+		}
+	}
+
+	&__date {
+		font-size: 40px;
+		font-weight: 600;
+		color: var(--button-colors);
+		padding-bottom: 16px;
+
+		@include tablet {
+			font-size: 32px;
+		}
+
+		@include mobail-s {
+			font-size: 20px;
+		}
+	}
+
+	&__arrow {
+		@include mobail {
+			width: 32px;
+		}
+	}
+
+	&__link-promo {
+		@include desktop {
+			display: none;
+		}
+
+		@include mobail {
+			display: block;
+		}
+	}
+}
