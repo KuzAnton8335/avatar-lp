@@ -1,7 +1,4 @@
-body {
-	background-color: black;
-	color: white;
-}
+
 
 //default
 @import "base/fonts";
@@ -10,4 +7,4 @@ body {
 @import "base/media";
 
 //blocks
-@import "blocks/header", "blocks/hero", "blocks/about","blocks/trailers";
+@import "blocks/header", "blocks/hero", "blocks/about","blocks/trailers","blocks/footer";

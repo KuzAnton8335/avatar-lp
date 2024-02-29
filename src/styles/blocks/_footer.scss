@@ -1,0 +1,46 @@
+.footer {
+	padding: 40px 0;
+	background: var(--black-color);
+	line-height: 1.4;
+
+	/* .footer__container */
+
+	&__container {
+		display: grid;
+		gap: 36px;
+		grid-template-areas: "developers logo" "copyright logo";
+	}
+
+	/* .footer__developers */
+
+	&__developers {
+		grid-area: developers;
+	}
+
+	/* .footer__developer-link */
+
+	&__developer-link {
+		margin-bottom: 7px;
+		transition: color 0.3s ease-in-out;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			color: var(--button-hover);
+		}
+	}
+
+	/* .footer__copyright */
+
+	&__copyright {
+		grid-area: copyright;
+	}
+
+	&__logo {
+		grid-area: logo;
+		justify-self: end;
+		align-self: end;
+	}
+}

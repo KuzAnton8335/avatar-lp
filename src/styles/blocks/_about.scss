@@ -1,5 +1,5 @@
 .about {
-	padding: 120px 0;
+	padding: 60px 0;
 
 	@include tablet {
 		padding: 100px 0;
@@ -52,6 +52,9 @@
 
 	&__picture {
 		flex-basis: 530px;
+		background-image: image-set(
+			url("img/about-img.jpeg"),
+		);
 
 		@include tablet {
 			flex-basis: 436px;
