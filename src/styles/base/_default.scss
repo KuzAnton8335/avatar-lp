@@ -1,5 +1,9 @@
 @import "_media.scss";
 
+:root {
+	scroll-behavior: smooth;
+}
+
 html {
 	position: relative;
 	box-sizing: border-box;
@@ -15,7 +19,7 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	min-width: 320px;
-	min-height: 100vh;
+	min-height: 100dvh;
 	font-family: "Inter", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
