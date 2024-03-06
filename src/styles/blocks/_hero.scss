@@ -1,69 +1,59 @@
 // дз
 .hero {
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.76) 60%, rgba(0, 0, 0, 1) 100%),
+		image-set(
+			url("../../img/bg-hero@2x.avif") type("image/avif") 2x,
+			url("../../img/bg-hero.avif") type("image/avif"),
+			url("../../img/bg-hero.webp") type("image/webp"),
+			url("../../img/bg-hero@2x.png") 2x,
+			url("../../img/bg-hero.png")
+		);
+	padding-bottom: 60px;
+	padding-top: 33vw;
+
+	@include tablet-sm {
+		padding: 50px 0;
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
+		justify-content: end;
 		align-items: center;
-		position: relative;
 	}
 
-	&__content {
-		position: absolute;
-		top: 404px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		@include tablet {
-			top: 265px;
-		}
-
-		@include mobail {
-			top: 143px;
-		}
-	}
-
-	&__picture {
+	&__banner {
 		max-width: 795px;
-		padding-top: 2px;
-
-		@include tablet {
-			max-width: 639px;
-		}
-
-		@include mobail-s {
-			max-width: 288px;
-		}
+		margin-bottom: 2px;
 	}
 
 	&__date {
-		font-size: 40px;
 		font-weight: 600;
+		font-size: 40px;
+		text-transform: uppercase;
 		color: var(--button-colors);
-		padding-bottom: 16px;
-
-		@include tablet {
-			font-size: 32px;
-		}
-
-		@include mobail-s {
-			font-size: 20px;
-		}
+		margin-bottom: 16px;
 	}
 
 	&__arrow {
-		@include mobail {
-			width: 32px;
+		width: 64px;
+		height: 64px;
+
+		&:hover {
+			color: var(--button-colors);
 		}
 	}
 
-	&__link-promo {
-		@include desktop {
-			display: none;
-		}
+	&__link {
+		display: none;
 
-		@include mobail {
+		@include mobail-ss {
 			display: block;
+			padding-top: 12px;
+			margin-bottom: 32px;
 		}
 	}
 }
