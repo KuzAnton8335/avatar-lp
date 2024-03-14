@@ -7,8 +7,12 @@
 	<title> ПРО КИНО - Аватар: Легенда об Аанге</title>
 	<link rel="icon" href="img/icon.png" type="image/png">
 	<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+	<link rel="preload" href="fonts/inter-v13-cyrillic_latin-600.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/inter-v13-cyrillic_latin-regular.woff2" as="font" crossorigin>
 	<link rel="stylesheet" href="src/styles/normalaiz.css">
 	<link rel="stylesheet" href="src/styles/style.scss">
+	<!-- index.js -->
+	<script src="src/js/index.js" defer></script>
 </head>
 
 <body>
@@ -61,7 +65,7 @@
 		<section class="about" id="about">
 			<div class="container about__container">
 				<div class="about__content">
-					<h2 class="about__title">Аватар: Легенда об Аанге</h2>
+					<h2 class="about__title">Аватар: Легенда&nbsp;об&nbsp;Аанге</h2>
 					<div class="about__description">
 						<p>Сюжет рассказывает о&nbsp;мальчике из&nbsp;племени воздушных кочевников, Аанге, способном
 							покорять стихию воздуха. В&nbsp;возрасте 11&nbsp;лет, он&nbsp;узнал, что
@@ -83,22 +87,16 @@
 		<section class="trailers" id="trailers">
 			<div class="container trailers__container">
 				<ul class="trailers__buttons">
-					<li class="trailers__item-button"><button class="trailers__button trailers__button-active">трейлер
+					<li class="trailers__item-button"><button class="trailers__button trailers__button-active"
+						data-src="https://www.youtube.com/embed/ByAn8DF8Ykk">трейлер
 							1</button>
 					</li>
-					<li class="trailers__item-button"><button class="trailers__button">трейлер 2</button>
+					<li class="trailers__item-button"><button class="trailers__button" data-src="https://www.youtube.com/embed/waJKJW_XU90">трейлер 2</button>
 					</li>
-					<li class="trailers__item-button"><button class="trailers__button">трейлер 3</button>
-					</li>
-				</ul>
-				<ul class="trailers__list">
-					<li class="trailers__item">
-						<div class="trailers__wrapper">
-							<iframe class="trailers__video" src="https://www.youtube.com/embed/ByAn8DF8Ykk"
-								title="Avatar: The Last Airbender | Official Trailer | Netflix" frameborder="0"></iframe>
-						</div>
+					<li class="trailers__item-button"><button class="trailers__button" data-src="https://www.youtube.com/embed/Cw12Dat8bkE">трейлер 3</button>
 					</li>
 				</ul>
+
 			</div>
 		</section>
 	</main>

@@ -24,15 +24,23 @@
 	@include tablet-sm {
 		padding-top: calc(337 / 1024 * 100%);
 		padding-bottom: 50px;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.76) 60%, rgba(0, 0, 0, 1) 100%),
+			image-set(
+				url("../../img/bg-hero-768.avif") type("image/avif"),
+				url("../../img/bg-hero-768@2x.avif") type("image/avif"),
+				url("../../img/bg-hero-768.jpg"),
+				url("../../img/bg-hero-768@2x.jpg")
+			);
 	}
 
 	@include mobail {
 		padding-top: calc(337 / 768 * 100%);
+		padding-bottom: 40px;
 	}
 
 	@include mobail-s {
-		padding-top: calc(220 / 320 * 100%);
-		padding-bottom: 40px;
+		padding-top: calc(173 / 320 * 100%);
+		padding-bottom: 30px;
 		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.76) 60%, rgba(0, 0, 0, 1) 100%),
 			image-set(
 				url("../../img/bg-hero-320.avif") type("image/avif"),

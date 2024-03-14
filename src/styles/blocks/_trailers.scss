@@ -3,19 +3,23 @@
 	padding-bottom: 60px;
 
 	@include tablet {
-		padding-bottom: 100px;
+		padding: 50px 0 100px;
 	}
 
 	@include mobail {
-		padding-bottom: 80px;
+		padding: 40px 0 80px;
 	}
 
 	@include mobail-s {
-		padding-bottom: 60px;
+		padding: 30px 0 60px;
 	}
 	&__container {
 		display: flex;
 		flex-direction: column;
+
+		@include mobail-s {
+			padding: 0;
+		}
 	}
 
 	/* .trailers__buttons */
@@ -24,7 +28,19 @@
 		display: flex;
 		align-items: center;
 		column-gap: 12px;
-		padding-bottom: 16px;
+		margin-bottom: 16px;
+
+		@include mobail {
+			column-gap: 8px;
+			padding: 0 16px;
+			overflow-x: scroll;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
+	}
+
+	&__buttons::-webkit-scrollbar {
+		display: none;
 	}
 
 	/* .trailers__button */
@@ -37,17 +53,30 @@
 		border-radius: 8px;
 		background-color: var(--gray-color);
 		text-transform: uppercase;
+		white-space: nowrap;
 
 		&-active {
 			background-color: var(--button-colors);
 		}
+
+		@include mobail {
+			padding: 10px 16px 10px 16px;
+			font-size: 12px;
+		}
 	}
 
 	&__wrapper {
+		display: none;
 		position: relative;
 		padding-bottom: 56.25%;
 		height: 0;
 		overflow: hidden;
+	}
+
+	&__list {
+		@include mobail {
+			padding: 0 16px;
+		}
 	}
 
 	/* .trailers__video */

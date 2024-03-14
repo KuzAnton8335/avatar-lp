@@ -1,3 +1,4 @@
+@import "../base/media";
 .header {
 	position: absolute;
 	top: 0;
@@ -13,8 +14,10 @@
 		align-items: center;
 		padding-top: 24px;
 		padding-bottom: 24px;
+	}
 
-		@include mobail-sm {
+	&__container {
+		@include tablet {
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}

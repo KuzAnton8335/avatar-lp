@@ -3,24 +3,41 @@
 	background: var(--black-color);
 	line-height: 1.4;
 
+	@include mobail-sm {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
 	/* .footer__container */
 
 	&__container {
 		display: grid;
 		gap: 36px;
 		grid-template-areas: "developers logo" "copyright logo";
+
+		@include mobail-sm {
+			gap: 20px;
+		}
+
+		@include mobail-ss {
+			grid-template-areas: "logo" "developers" "copyright";
+		}
 	}
 
 	/* .footer__developers */
 
 	&__developers {
 		grid-area: developers;
+
+		@include mobail-sm {
+			font-size: 12px;
+		}
 	}
 
 	/* .footer__developer-link */
 
 	&__developer-link {
-		margin-bottom: 7px;
+		margin-bottom: 8px;
 		transition: color 0.3s ease-in-out;
 
 		&:last-child {
@@ -36,11 +53,21 @@
 
 	&__copyright {
 		grid-area: copyright;
+
+		@include mobail-sm {
+			font-size: 12px;
+		}
 	}
 
 	&__logo {
+		width: 287px;
 		grid-area: logo;
 		justify-self: end;
 		align-self: end;
+
+		@include mobail-ss {
+			width: 217px;
+			justify-self: start;
+		}
 	}
 }
