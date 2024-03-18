@@ -66,7 +66,7 @@ const createListTrailers = (parrent, srcList) => {
 		</style>
 
 		<a href="https://www.youtube.com/embed/${idVideo}?autoplay=1">
-		<img src="https://img.yuotube.com/vi/${idVideo}/maxresdefault.jpg">
+		<img src="https://img.youtube.com/vi/${idVideo}/maxresdefault.jpg"/>
 		<div id ="button">
 		<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<circle cx="32" cy="32" r="32" fill="#FF3D00"/>
